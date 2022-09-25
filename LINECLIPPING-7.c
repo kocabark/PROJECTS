@@ -56,7 +56,7 @@ int compute_outcode(double x, double y,double xmin,double ymin,double xmax,doubl
 }
 
 
-int clipLine(double rx1,double ry1,double rx2,double ry2,double * ax,double * ay,double * bx,double * by )//pointlerlari function icinde farkli kullanman gerekebilir check et.
+int clipLine(double rx1,double ry1,double rx2,double ry2,double * ax,double * ay,double * bx,double * by )//pointers! 
 {
 
    double axx, ayy, bxx, byy;
@@ -88,7 +88,7 @@ int clipLine(double rx1,double ry1,double rx2,double ry2,double * ax,double * ay
         printf("1.1if\n");
         break;
 	}
-    else if (outcode1 & outcode2)  // conditiondan emin ol tekrar cek et
+    else if (outcode1 & outcode2)  
     {
         if(fabs(*ax-*bx)<=10e-12*fabs(*ax+*bx) && fabs(*ay-*by)<=10e-12*fabs(*ay+*by))
         {
@@ -155,7 +155,7 @@ int clipLine(double rx1,double ry1,double rx2,double ry2,double * ax,double * ay
 int almostEqual(double x, double y)
 {
 
-    // Check if the numbers are really close -- needed when comparing numbers near zero. 10e-5
+    // Check if the numbers are really close. 10e-5
     //0.1e-5 epsilon variable olarak verip fabs x ile fabs y i toplayip bir degerle carp
     if ( fabs(x - y) <10e-12 * fabs( x + y ) ) //e-5
             return 1;

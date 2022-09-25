@@ -7,7 +7,7 @@ int DoubleEqual(double a, double b){
    return fabs(a - b) < EPS * 1000 * (fabs(a) + fabs(b));
 }
 
-// dont forget to check last paranthesis for each scanf function.
+
 
 int main (void){
 double x1, x2, y1, y2, r1, r2;
@@ -16,7 +16,7 @@ printf("Enter circle #1 parameters:\n");
 if(scanf (" %lf %lf %lf", &x1,&y1, &r1) != 3 || r1 <= 0 ){
     printf("Invalid input.\n");
     return 0;
-}// radious 0 dan kucuk nasil derim?(double )
+}
 
 printf("Enter circle #2 parameters:\n");
 if(scanf (" %lf %lf %lf", &x2 ,&y2, &r2) != 3 || r2 <= 0 ){
@@ -71,11 +71,11 @@ double overlap = areacirc1 + areacirc2;
         printf("The circles intersect, overlap: %lf\n", overlap);
 
     }
-    else if ( d <= fabs(r1 - r2) ){//doesnt work!!!
+    else if ( d <= fabs(r1 - r2) ){
         
         printf("Circle #%d lies inside circle #%d, overlap: %lf\n", x, y, Area);   
     }
-    else {//how to say one double is less or greater than other.
+    else {
         printf("The circles lie outside each other, no overlap.\n");
     }
     

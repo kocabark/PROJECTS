@@ -19,7 +19,7 @@ int main (){
         return 0;
         }
         
-        // MAYBE ELSE IF
+        // ELSE IF
         if( shape1 == 'T'){
             if ( scanf("%lf %lf %lf", &a, &b, &c) != 3 || a + b < c || DoubleEqual(c,a+b) || a + c < b || DoubleEqual(b,a+c) || b + c < a || DoubleEqual(a,b+c) || a <= 0|| b <= 0 || c <= 0){
                 printf("Invalid input.\n");
@@ -64,7 +64,7 @@ int main (){
         return 0;
         }
         
-        // MAYBE ELSE IF AND REVERSE ORDER 'TRS' LIKE ABOVE
+        
         else if( shape2 == 'T'){
             if ( scanf("%lf %lf %lf", &x, &y, &z) != 3 || x + y < z || DoubleEqual (z,x+y) || x + z < y || DoubleEqual(y,x+z) || y + z < x || DoubleEqual(x,y+z) || x <= 0 || y <= 0 || z <= 0){
                 printf("Invalid input.\n");
@@ -105,8 +105,7 @@ int main (){
     
 
 
-            // ;((
-            // please dont cry
+         //redundent 
 
         if ( shp1 == 3 && shp2 == 3){ // T  T
             if (DoubleEqual(perimeter1,perimeter2)){

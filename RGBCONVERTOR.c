@@ -18,10 +18,5 @@ int main(void){
     return 0;
     }
 
-    /*scanf(" rgb ( %d , %d , %d)", &red, &green, &blue );
-    if( ( red >= 0 && red <= 255 ) && ( green >= 0 && green <= 255 ) && ( blue >= 0 && blue <= 255 ) ){
-        printf("#%0.2X%0.2X%0.2X\n", red, green, blue); 
-    }else if ((scanf(" rgb ( %d , %d , %d)", &red, &green, &blue )) != 3 ){
-        printf("Invalid input.\n");
-    }*/
+  
 }
